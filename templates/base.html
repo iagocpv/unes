@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="../static/normalize.css">
+    <link rel="stylesheet" href="../static/main.css">
+</head>
+<body {{ bg }}>
+    <div class="wrapper">
+        <header>
+            <a class="logo" href="/"><img src="../static/img/logo.png" alt="UNES Logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/quemsomos">Quem somos</a></li>
+                    <li><a href="/contato">Contato</a></li>                    
+                </ul>
+            </nav>
+        </header> 
+        {% block main %}
+        {% endblock %}
+        <footer>Todos os direitos reservados</footer>
+    </div>    
+</body>
+</html>

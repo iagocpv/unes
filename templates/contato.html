@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1>Entre em contato</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nesciunt aspernatur enim quasi quas amet!</p>
+<hr>
+<form>
+    <label for="email">Seu email:</label><br>
+    <input type="text" id="email" name="email"><br>
+    <label for="assunto">Assunto:</label><br>
+    <input type="text" id="assunto" name="assunto"><br>
+    <label for="descricao">Descrição:</label><br>
+    <textarea name="descricao" id="descricao" cols="18" rows="2"></textarea><br>
+    <input type="submit" value="Enviar" class="submit-btn">
+</form>
+{% endblock %}
