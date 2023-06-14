@@ -4,13 +4,13 @@
 <h1>Entre em contato</h1>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore nesciunt aspernatur enim quasi quas amet!</p>
 <hr>
-<form>
+<form method="POST" action="/contato">
     <label for="email">Seu email:</label><br>
-    <input type="text" id="email" name="email"><br>
+    <input type="text" id="email" name="email" required><br>
     <label for="assunto">Assunto:</label><br>
-    <input type="text" id="assunto" name="assunto"><br>
+    <input type="text" id="assunto" name="assunto" required><br>
     <label for="descricao">Descrição:</label><br>
-    <textarea name="descricao" id="descricao" cols="18" rows="2"></textarea><br>
+    <textarea name="descricao" id="descricao" cols="18" rows="2" required></textarea><br>
     <input type="submit" value="Enviar" class="submit-btn">
 </form>
 {% endblock %}
